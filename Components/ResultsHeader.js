@@ -40,6 +40,7 @@ function ResultsHeader() {
         src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
         height={40}
         width={120}
+        alt='Google Logo'
       />
 
     <form className="flex flex-grow border border-gray-200 shadow-lg rounded-full max-w-3xl items-center px-6 py-3 ml-10 mr-5">

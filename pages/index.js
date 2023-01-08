@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
 import Header from "../Components/Header";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { MicrophoneIcon, CameraIcon } from "@heroicons/react/24/solid";
 import Footer from "../Components/Footer";
 import { useRef } from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 export default function Home() {
   const Router = useRouter();
@@ -55,7 +55,7 @@ export default function Home() {
             {" "}
             Google Search
           </button>
-          <button onClick={search}className="btn p-3"> I'm Feeling Lucky</button>
+          <button onClick={search}className="btn p-3"> I&apos;m Feeling Lucky</button>
         </div>
       </form>
 
