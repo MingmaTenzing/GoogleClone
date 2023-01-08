@@ -35,6 +35,7 @@ export default function Home() {
           src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
           height={100}
           width={300}
+          alt=''
         />
 
         <div className="w-full flex mt-5 hover:shadow-lg  focus-within:lg max-w-md rounded-full border-gray-200 px-5 py-3  items-center border">
@@ -54,7 +55,7 @@ export default function Home() {
             {" "}
             Google Search
           </button>
-          <button onclick={search}className="btn p-3"> I'm Feeling Lucky</button>
+          <button onClick={search}className="btn p-3"> I'm Feeling Lucky</button>
         </div>
       </form>
 
