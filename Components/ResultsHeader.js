@@ -3,6 +3,7 @@ import {  CameraIcon, MicrophoneIcon, MinusIcon, UserCircleIcon, XMarkIcon } fro
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useRef } from "react";
+import { CONTEXT_KEY } from "../keys";
 import ResultHeaderOptions from "./ResultHeaderOptions";
 
 function ResultsHeader() {
@@ -44,7 +45,7 @@ function ResultsHeader() {
       />
 
     <form className="flex flex-grow border border-gray-200 shadow-lg rounded-full max-w-3xl items-center px-6 py-3 ml-10 mr-5">
-        <input ref={searchInputRef} className='flex-grow w-full focus:outline-none' type='text'/>
+        <input ref={searchInputRef} className='flex-grow w-full focus:outline-none' type='text' defaultValue={router.query.term} />
         
        
         <XMarkIcon onClick={() => {
